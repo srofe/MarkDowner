@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F45E06C0283A0666009FC7BF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E06BF283A0666009FC7BF /* WebView.swift */; };
 		F47C11222836EF6500E5D251 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F47C11212836EF6500E5D251 /* README.md */; };
 		F47C11252836F16B00E5D251 /* MarkdownKit in Frameworks */ = {isa = PBXBuildFile; productRef = F47C11242836F16B00E5D251 /* MarkdownKit */; };
 		F4F4F5A9283625C70006F1DE /* MarkDownerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F5A8283625C70006F1DE /* MarkDownerApp.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F45E06BF283A0666009FC7BF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		F47C11212836EF6500E5D251 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F4F4F5A5283625C70006F1DE /* MarkDowner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkDowner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4F5A8283625C70006F1DE /* MarkDownerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownerApp.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F4F4F5AA283625C70006F1DE /* MarkDownerDocument.swift */,
 				F47C11212836EF6500E5D251 /* README.md */,
 				F4F4F5AC283625C70006F1DE /* ContentView.swift */,
+				F45E06BF283A0666009FC7BF /* WebView.swift */,
 				F4F4F5AE283625C80006F1DE /* Assets.xcassets */,
 				F4F4F5B3283625C80006F1DE /* Info.plist */,
 				F4F4F5B4283625C80006F1DE /* MarkDowner.entitlements */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F4F5AB283625C70006F1DE /* MarkDownerDocument.swift in Sources */,
+				F45E06C0283A0666009FC7BF /* WebView.swift in Sources */,
 				F4F4F5A9283625C70006F1DE /* MarkDownerApp.swift in Sources */,
 				F4F4F5AD283625C70006F1DE /* ContentView.swift in Sources */,
 			);

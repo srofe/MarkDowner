@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UniformTypeIdentifiers
+import MarkdownKit
 
 extension UTType {
     static var exampleText: UTType {
@@ -16,6 +17,10 @@ extension UTType {
 
 struct MarkDownerDocument: FileDocument {
     var text: String
+    var html: String {
+        let markdown = MarkdownParser.standard.parse(text)
+        return HtmlGenerator.standard.generate(doc: markdown)
+    }
 
     init(text: String = "Hello, world!") {
         self.text = text
