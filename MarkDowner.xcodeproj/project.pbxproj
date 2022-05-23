@@ -10,6 +10,7 @@
 		F45E06C0283A0666009FC7BF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E06BF283A0666009FC7BF /* WebView.swift */; };
 		F47C11222836EF6500E5D251 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F47C11212836EF6500E5D251 /* README.md */; };
 		F47C11252836F16B00E5D251 /* MarkdownKit in Frameworks */ = {isa = PBXBuildFile; productRef = F47C11242836F16B00E5D251 /* MarkdownKit */; };
+		F4A3CF8E283B6EAF00469BAA /* KeyWindow in Frameworks */ = {isa = PBXBuildFile; productRef = F4A3CF8D283B6EAF00469BAA /* KeyWindow */; };
 		F4CA74B3283B2124004303AB /* github.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74AE283B2124004303AB /* github.css */; };
 		F4CA74B4283B2124004303AB /* darksolarized.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74AF283B2124004303AB /* darksolarized.css */; };
 		F4CA74B5283B2124004303AB /* ulysses.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74B0283B2124004303AB /* ulysses.css */; };
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A3CF8E283B6EAF00469BAA /* KeyWindow in Frameworks */,
 				F47C11252836F16B00E5D251 /* MarkdownKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +131,7 @@
 			name = MarkDowner;
 			packageProductDependencies = (
 				F47C11242836F16B00E5D251 /* MarkdownKit */,
+				F4A3CF8D283B6EAF00469BAA /* KeyWindow */,
 			);
 			productName = MarkDowner;
 			productReference = F4F4F5A5283625C70006F1DE /* MarkDowner.app */;
@@ -160,6 +163,7 @@
 			mainGroup = F4F4F59C283625C70006F1DE;
 			packageReferences = (
 				F47C11232836F16B00E5D251 /* XCRemoteSwiftPackageReference "swift-markdownkit" */,
+				F4A3CF8C283B6EAF00469BAA /* XCRemoteSwiftPackageReference "KeyWindow" */,
 			);
 			productRefGroup = F4F4F5A6283625C70006F1DE /* Products */;
 			projectDirPath = "";
@@ -406,6 +410,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		F4A3CF8C283B6EAF00469BAA /* XCRemoteSwiftPackageReference "KeyWindow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LostMoa/KeyWindow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -413,6 +425,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F47C11232836F16B00E5D251 /* XCRemoteSwiftPackageReference "swift-markdownkit" */;
 			productName = MarkdownKit;
+		};
+		F4A3CF8D283B6EAF00469BAA /* KeyWindow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4A3CF8C283B6EAF00469BAA /* XCRemoteSwiftPackageReference "KeyWindow" */;
+			productName = KeyWindow;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
