@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct MenuCommands: Commands {
-    @AppStorage("stylesheet") var stylesheet: StyleSheet = .github
+    @AppStorage("styleSheet") var styleSheet: StyleSheet = .github
 
     var body: some Commands {
         CommandMenu("Display") {
             ForEach(StyleSheet.allCases, id: \.self) { style in
                 Button {
-                    stylesheet = style
+                    styleSheet = style
                 } label: {
                     Text(style.rawValue)
                 }

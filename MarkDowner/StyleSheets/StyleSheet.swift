@@ -11,6 +11,6 @@ enum StyleSheet: String, CaseIterable {
     case raywenderlich = "Ray Wenderlich"
     case github = "github"
     case lopash = "Lopash"
-    case darksolarised = "Dark Solarised"
+    case darksolarized = "Dark Solarized"
     case ulysses = "Ulysses"
 }
