@@ -68,5 +68,10 @@ struct MenuCommands: Commands {
                 document?.text += imageText
             }
         }
+        CommandGroup(after: .importExport) {
+            Button("Export HTML...") {
+            }
+            .disabled(document == nil)
+        }
     }
 }
