@@ -52,6 +52,9 @@ struct ContentView: View {
         }
         .font(.system(size: editorFontSize))
         .keyWindow(MarkDownerDocument.self, $document)
+        .touchBar {
+            TouchbarCommands()
+        }
     }
 }
 
