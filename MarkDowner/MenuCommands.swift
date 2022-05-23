@@ -17,6 +17,7 @@ struct MenuCommands: Commands {
                     styleSheet = style
                 } label: {
                     Text(style.rawValue)
+                        .foregroundColor(style == styleSheet ? .accentColor : .primary)
                 }
                 .keyboardShortcut(KeyEquivalent(style.rawValue.first!))
             }
