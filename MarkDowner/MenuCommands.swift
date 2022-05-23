@@ -75,7 +75,9 @@ struct MenuCommands: Commands {
             .disabled(document == nil)
         }
     }
+}
 
+extension MenuCommands {
     func exportHTML() {
         guard let document = document else { return }
         let savePanel = NSSavePanel()
