@@ -70,8 +70,21 @@ struct MenuCommands: Commands {
         }
         CommandGroup(after: .importExport) {
             Button("Export HTML...") {
+                exportHTML()
             }
             .disabled(document == nil)
+        }
+    }
+
+    func exportHTML() {
+        guard let document = document else { return }
+        let savePanel = NSSavePanel()
+        savePanel.title = "Save HTML"
+        savePanel.nameFieldStringValue = "Export.html"
+        savePanel.begin { response in
+            if response == .OK, let url = savePanel.url {
+                try? document.html.write(to: url, atomically: true, encoding: .utf8)
+            }
         }
     }
 }
