@@ -16,6 +16,7 @@
 		F4CA74B6283B2124004303AB /* raywenderlich.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74B1283B2124004303AB /* raywenderlich.css */; };
 		F4CA74B7283B2124004303AB /* lopash.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74B2283B2124004303AB /* lopash.css */; };
 		F4CA74B9283B215A004303AB /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA74B8283B215A004303AB /* StyleSheet.swift */; };
+		F4CA74BB283B21F2004303AB /* MenuCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA74BA283B21F2004303AB /* MenuCommands.swift */; };
 		F4F4F5A9283625C70006F1DE /* MarkDownerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F5A8283625C70006F1DE /* MarkDownerApp.swift */; };
 		F4F4F5AB283625C70006F1DE /* MarkDownerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F5AA283625C70006F1DE /* MarkDownerDocument.swift */; };
 		F4F4F5AD283625C70006F1DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F5AC283625C70006F1DE /* ContentView.swift */; };
@@ -32,6 +33,7 @@
 		F4CA74B1283B2124004303AB /* raywenderlich.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = raywenderlich.css; sourceTree = "<group>"; };
 		F4CA74B2283B2124004303AB /* lopash.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = lopash.css; sourceTree = "<group>"; };
 		F4CA74B8283B215A004303AB /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
+		F4CA74BA283B21F2004303AB /* MenuCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCommands.swift; sourceTree = "<group>"; };
 		F4F4F5A5283625C70006F1DE /* MarkDowner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkDowner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4F5A8283625C70006F1DE /* MarkDownerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownerApp.swift; sourceTree = "<group>"; };
 		F4F4F5AA283625C70006F1DE /* MarkDownerDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownerDocument.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				F47C11212836EF6500E5D251 /* README.md */,
 				F4F4F5AC283625C70006F1DE /* ContentView.swift */,
 				F45E06BF283A0666009FC7BF /* WebView.swift */,
+				F4CA74BA283B21F2004303AB /* MenuCommands.swift */,
 				F4CA74AD283B20FD004303AB /* StyleSheets */,
 				F4F4F5AE283625C80006F1DE /* Assets.xcassets */,
 				F4F4F5B3283625C80006F1DE /* Info.plist */,
@@ -192,6 +195,7 @@
 			files = (
 				F4F4F5AB283625C70006F1DE /* MarkDownerDocument.swift in Sources */,
 				F4CA74B9283B215A004303AB /* StyleSheet.swift in Sources */,
+				F4CA74BB283B21F2004303AB /* MenuCommands.swift in Sources */,
 				F45E06C0283A0666009FC7BF /* WebView.swift in Sources */,
 				F4F4F5A9283625C70006F1DE /* MarkDownerApp.swift in Sources */,
 				F4F4F5AD283625C70006F1DE /* ContentView.swift in Sources */,
