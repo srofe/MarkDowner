@@ -18,6 +18,7 @@ struct MenuCommands: Commands {
                 } label: {
                     Text(style.rawValue)
                 }
+                .keyboardShortcut(KeyEquivalent(style.rawValue.first!))
             }
             // TODO: More menu items
         }
