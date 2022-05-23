@@ -40,6 +40,13 @@ struct MenuCommands: Commands {
                 .keyboardShortcut("+")
             }
         }
-        // TODO: More menus
+        CommandGroup(replacing: .help) {
+            NavigationLink(
+                destination:
+                    WebView(html: nil, address: "https://bit.ly/3x55SNC")
+                    .frame(minWidth: 600, minHeight: 600)) {
+                        Text("Markdown Help")
+                    }
+        }
     }
 }
