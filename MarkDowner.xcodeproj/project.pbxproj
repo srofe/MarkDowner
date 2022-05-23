@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F404479D283C36CF008BC67C /* TouchbarCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F404479C283C36CF008BC67C /* TouchbarCommands.swift */; };
 		F45E06C0283A0666009FC7BF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E06BF283A0666009FC7BF /* WebView.swift */; };
 		F47C11222836EF6500E5D251 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F47C11212836EF6500E5D251 /* README.md */; };
 		F47C11252836F16B00E5D251 /* MarkdownKit in Frameworks */ = {isa = PBXBuildFile; productRef = F47C11242836F16B00E5D251 /* MarkdownKit */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F404479C283C36CF008BC67C /* TouchbarCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchbarCommands.swift; sourceTree = "<group>"; };
 		F45E06BF283A0666009FC7BF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		F47C11212836EF6500E5D251 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F4CA74AE283B2124004303AB /* github.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = github.css; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				F4F4F5B3283625C80006F1DE /* Info.plist */,
 				F4F4F5B4283625C80006F1DE /* MarkDowner.entitlements */,
 				F4F4F5B0283625C80006F1DE /* Preview Content */,
+				F404479C283C36CF008BC67C /* TouchbarCommands.swift */,
 			);
 			path = MarkDowner;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			files = (
 				F4F4F5AB283625C70006F1DE /* MarkDownerDocument.swift in Sources */,
 				F4CA74B9283B215A004303AB /* StyleSheet.swift in Sources */,
+				F404479D283C36CF008BC67C /* TouchbarCommands.swift in Sources */,
 				F4CA74BB283B21F2004303AB /* MenuCommands.swift in Sources */,
 				F45E06C0283A0666009FC7BF /* WebView.swift in Sources */,
 				F4F4F5A9283625C70006F1DE /* MarkDownerApp.swift in Sources */,
