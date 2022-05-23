@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MenuCommands: Commands {
     @AppStorage("styleSheet") var styleSheet: StyleSheet = .github
+    @AppStorage("editorFontSize") var editorFontSize: Double = 14
 
     var body: some Commands {
         CommandMenu("Display") {
@@ -21,7 +22,23 @@ struct MenuCommands: Commands {
                 }
                 .keyboardShortcut(KeyEquivalent(style.rawValue.first!))
             }
-            // TODO: More menu items
+            Divider()
+            Menu("Font Size") {
+                Button("Smaller") {
+                    if editorFontSize > 8 {
+                        editorFontSize -= 1
+                    }
+                }
+                .keyboardShortcut("-")
+                Button("Reset") {
+                    editorFontSize = 14
+                }
+                .keyboardShortcut("0")
+                Button("Larger") {
+                    editorFontSize += 1
+                }
+                .keyboardShortcut("+")
+            }
         }
         // TODO: More menus
     }
