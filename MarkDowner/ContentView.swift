@@ -14,6 +14,7 @@ enum PreviewState {
 }
 
 struct ContentView: View {
+    @AppStorage("editorFontSize") var editorFontSize: Double = 14
     @Binding var document: MarkDownerDocument
     @State private var previewState = PreviewState.web
 
@@ -48,6 +49,11 @@ struct ContentView: View {
                 .pickerStyle(.segmented)
                 .help("Hide preview, show HTML or web view")
             }
+        }
+        .font(.system(size: editorFontSize))
+        .keyWindow(MarkDownerDocument.self, $document)
+        .touchBar {
+            TouchbarCommands()
         }
     }
 }

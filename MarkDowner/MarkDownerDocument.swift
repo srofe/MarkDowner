@@ -8,6 +8,7 @@
 import SwiftUI
 import UniformTypeIdentifiers
 import MarkdownKit
+import KeyWindow
 
 extension UTType {
     static var exampleText: UTType {
@@ -41,4 +42,8 @@ struct MarkDownerDocument: FileDocument {
         let data = text.data(using: .utf8)!
         return .init(regularFileWithContents: data)
     }
+}
+
+extension MarkDownerDocument: KeyWindowValueKey {
+    public typealias Value = Binding<Self>
 }
