@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import KeyWindow
 
 struct MenuCommands: Commands {
     @AppStorage("styleSheet") var styleSheet: StyleSheet = .github
     @AppStorage("editorFontSize") var editorFontSize: Double = 14
+    @KeyWindowValueBinding(MarkDownerDocument.self) var document: MarkDownerDocument?
 
     var body: some Commands {
         CommandMenu("Display") {
@@ -47,6 +49,24 @@ struct MenuCommands: Commands {
                     .frame(minWidth: 600, minHeight: 600)) {
                         Text("Markdown Help")
                     }
+        }
+        CommandMenu("Markdown") {
+            Button("Bold") {
+                document?.text += "**BOLD**"
+            }
+            .keyboardShortcut("b")
+            Button("Italic") {
+                document?.text += "__Italic__"
+            }
+            .keyboardShortcut("i", modifiers: .command)
+            Button("Link") {
+                let linkText = "[Title](https://link_to_page)"
+                document?.text += linkText
+            }
+            Button("Image") {
+                let imageText = "![alt text](https://link_to_image)"
+                document?.text += imageText
+            }
         }
     }
 }
