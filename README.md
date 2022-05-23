@@ -1,4 +1,4 @@
-# MarkdDowner
+# MarkDowner
 
 From the Ray Wenderlich tutorial [macOS by Tutorials](https://www.raywenderlich.com/books/macos-by-tutorials/v1.0/).
 
