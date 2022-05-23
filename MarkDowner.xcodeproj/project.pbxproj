@@ -10,6 +10,11 @@
 		F45E06C0283A0666009FC7BF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E06BF283A0666009FC7BF /* WebView.swift */; };
 		F47C11222836EF6500E5D251 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F47C11212836EF6500E5D251 /* README.md */; };
 		F47C11252836F16B00E5D251 /* MarkdownKit in Frameworks */ = {isa = PBXBuildFile; productRef = F47C11242836F16B00E5D251 /* MarkdownKit */; };
+		F4CA74B3283B2124004303AB /* github.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74AE283B2124004303AB /* github.css */; };
+		F4CA74B4283B2124004303AB /* darksolarized.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74AF283B2124004303AB /* darksolarized.css */; };
+		F4CA74B5283B2124004303AB /* ulysses.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74B0283B2124004303AB /* ulysses.css */; };
+		F4CA74B6283B2124004303AB /* raywenderlich.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74B1283B2124004303AB /* raywenderlich.css */; };
+		F4CA74B7283B2124004303AB /* lopash.css in Resources */ = {isa = PBXBuildFile; fileRef = F4CA74B2283B2124004303AB /* lopash.css */; };
 		F4F4F5A9283625C70006F1DE /* MarkDownerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F5A8283625C70006F1DE /* MarkDownerApp.swift */; };
 		F4F4F5AB283625C70006F1DE /* MarkDownerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F5AA283625C70006F1DE /* MarkDownerDocument.swift */; };
 		F4F4F5AD283625C70006F1DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F5AC283625C70006F1DE /* ContentView.swift */; };
@@ -20,6 +25,11 @@
 /* Begin PBXFileReference section */
 		F45E06BF283A0666009FC7BF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		F47C11212836EF6500E5D251 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		F4CA74AE283B2124004303AB /* github.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = github.css; sourceTree = "<group>"; };
+		F4CA74AF283B2124004303AB /* darksolarized.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = darksolarized.css; sourceTree = "<group>"; };
+		F4CA74B0283B2124004303AB /* ulysses.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = ulysses.css; sourceTree = "<group>"; };
+		F4CA74B1283B2124004303AB /* raywenderlich.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = raywenderlich.css; sourceTree = "<group>"; };
+		F4CA74B2283B2124004303AB /* lopash.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = lopash.css; sourceTree = "<group>"; };
 		F4F4F5A5283625C70006F1DE /* MarkDowner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkDowner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F4F5A8283625C70006F1DE /* MarkDownerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownerApp.swift; sourceTree = "<group>"; };
 		F4F4F5AA283625C70006F1DE /* MarkDownerDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownerDocument.swift; sourceTree = "<group>"; };
@@ -42,6 +52,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4CA74AD283B20FD004303AB /* StyleSheets */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA74AF283B2124004303AB /* darksolarized.css */,
+				F4CA74AE283B2124004303AB /* github.css */,
+				F4CA74B2283B2124004303AB /* lopash.css */,
+				F4CA74B1283B2124004303AB /* raywenderlich.css */,
+				F4CA74B0283B2124004303AB /* ulysses.css */,
+			);
+			path = StyleSheets;
+			sourceTree = "<group>";
+		};
 		F4F4F59C283625C70006F1DE = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +88,7 @@
 				F47C11212836EF6500E5D251 /* README.md */,
 				F4F4F5AC283625C70006F1DE /* ContentView.swift */,
 				F45E06BF283A0666009FC7BF /* WebView.swift */,
+				F4CA74AD283B20FD004303AB /* StyleSheets */,
 				F4F4F5AE283625C80006F1DE /* Assets.xcassets */,
 				F4F4F5B3283625C80006F1DE /* Info.plist */,
 				F4F4F5B4283625C80006F1DE /* MarkDowner.entitlements */,
@@ -146,8 +169,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CA74B7283B2124004303AB /* lopash.css in Resources */,
+				F4CA74B3283B2124004303AB /* github.css in Resources */,
 				F47C11222836EF6500E5D251 /* README.md in Resources */,
 				F4F4F5B2283625C80006F1DE /* Preview Assets.xcassets in Resources */,
+				F4CA74B4283B2124004303AB /* darksolarized.css in Resources */,
+				F4CA74B6283B2124004303AB /* raywenderlich.css in Resources */,
+				F4CA74B5283B2124004303AB /* ulysses.css in Resources */,
 				F4F4F5AF283625C80006F1DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
