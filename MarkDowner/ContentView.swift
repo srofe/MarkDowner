@@ -21,8 +21,18 @@ struct ContentView: View {
         HSplitView {
             TextEditor(text: $document.text)
                 .frame(minWidth: 200)
-            WebView(html: document.html)
-                .frame(minWidth: 200)
+            if previewState == .web {
+                WebView(html: document.html)
+                    .frame(minWidth: 200)
+            } else if previewState == .code {
+                ScrollView {
+                    Text(document.html)
+                        .frame(minWidth: 200)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                        .padding()
+                        .textSelection(.enabled)
+                }
+            }
         }
         .frame(minWidth: 400, idealWidth: 600, maxWidth: .infinity, minHeight: 300, idealHeight: 400, maxHeight: .infinity)
         .toolbar {
